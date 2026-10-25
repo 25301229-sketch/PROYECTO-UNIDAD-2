@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BRISECO: kit de limpieza exterior sin enjuague y servicio a domicilio por cita en Tula de Allende. Consulta disponibilidad.">
+    <title>BRISECO | Tu auto limpio, sin enjuague</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg" aria-label="Menú principal">
+            <div class="container">
+                <a class="navbar-brand marca" href="index.html">BRISECO<span>•</span></a>
+                <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <i class="bi bi-list" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-home">
+            <div class="container-fluid p-0">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-lg-6 hero-copy d-flex flex-column justify-content-center">
+                        <span class="pill pill-dark">● &nbsp; CUIDADO EXTERIOR DEL AUTO</span>
+                        <h1>Tu auto limpio.<br><span>Sin enjuague.</span></h1>
+                        <p class="hero-lead">El cuidado de todos los días, a tu manera. Elige el kit BRISECO de 500 ml o consulta una aplicación exterior a domicilio por cita.</p>
+                    </div>
+                    <div class="col-lg-6 hero-visual">
+                        <div id="carruselBriseco" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/kit-briseco.jpg" alt="Botella BRISECO con paño de microfibra">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/servicio-domicilio.jpg" alt="Cuidado exterior de un auto a domicilio">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/detalle-microfibra.jpg" alt="Paño de microfibra sobre un automóvil">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselBriseco" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Imagen anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carruselBriseco" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Imagen siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-strip" aria-label="Lo esencial de BRISECO">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-4"><p><strong>01 / Sin enjuague</strong><span>Una aplicación exterior pensada para el mantenimiento entre lavados.</span></p></div>
+                    <div class="col-md-4"><p><strong>02 / Dos formas de elegir</strong><span>Usa el kit en casa o consulta una atención por cita.</span></p></div>
+                    <div class="col-md-4"><p><strong>03 / Atención cercana</strong><span>Cuéntanos tu caso y revisamos opciones en Tula de Allende.</span></p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="funtion.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    color: #103e37;
+    background: #f6f5ed;
+    font-family: "Manrope", Arial, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-weight: 800;
+    letter-spacing: -0.035em;
+}
+h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.13;
+}
+p {
+    line-height: 1.65;
+}
+.site-header {
+    background: #071e18;
+    position: relative;
+    z-index: 10;
+}
+.navbar {
+    min-height: 76px;
+}
+.marca, .footer-brand {
+    color: white;
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+.marca:hover, .footer-brand:hover {
+    color: white;
+}
+.marca span, .footer-brand span {
+    color: #c5ee68;
+    margin-left: 6px;
+}
+.navbar .nav-link {
+    color: #d6e2dc;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin: 0 8px;
+    transition: color .2s ease, transform .2s ease;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: #c5ee68;
+}
+.navbar .nav-link:hover {
+    transform: translateY(-2px);
+}
+.menu-toggle {
+    color: #c5ee68;
+    border: 1px solid #547064;
+    font-size: 1.7rem;
+}
+.menu-toggle:focus {
+    box-shadow: 0 0 0 3px #c5ee6860;
+}
+.hero-home {
+    background: #071e18;
+    color: white;
+}
+.hero-copy {
+    min-height: 620px;
+    padding: 70px max(5vw, 32px);
+    animation: aparecer .8s ease both;
+}
+.hero-copy h1 {
+    margin: 28px 0 24px;
+    font-size: clamp(3.2rem, 5vw, 5.8rem);
+    line-height: 1.06;
+}
+.hero-copy h1 span, .page-hero h1 span {
+    color: #c5ee68;
+}
+.pill {
+    display: inline-block;
+    width: fit-content;
+    border-radius: 999px;
+    padding: 9px 15px;
+    font-size: 0.67rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+}
+.pill-dark {
+    color: #c5ee68;
+    background: #1b4231;
+}
+.hero-lead {
+    max-width: 550px;
+    color: #bdcec4;
+    font-size: 1.08rem;
+}
+.hero-visual {
+    min-height: 620px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-visual .carousel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.hero-visual .carousel-inner, .hero-visual .carousel-item {
+    height: 100%;
+}
+.hero-visual .carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+.hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero-visual .carousel-item.active img {
+    animation: acercar 4.5s ease both;
+}
+.hero-visual .carousel-control-prev, .hero-visual .carousel-control-next {
+    width: 12%;
+    opacity: 0.8;
+}
+.hero-visual .carousel-control-prev:hover, .hero-visual .carousel-control-next:hover {
+    opacity: 1;
+}
+.quick-strip {
+    padding: 22px 0;
+    background: #c5ee68;
+}
+.quick-strip .col-md-4 {
+    transition: transform .3s ease;
+}
+.quick-strip .col-md-4:hover {
+    transform: translateY(-4px);
+}
+.quick-strip p {
+    margin: 0;
+    color: #071e18;
+}
+.quick-strip strong, .quick-strip span {
+    display: block;
+}
+.quick-strip strong {
+    font-size: 0.9rem;
+}
+.quick-strip span {
+    margin-top: 3px;
+    font-size: 0.82rem;
+}
+body.animaciones main > section:not(.hero-home):not(.page-hero) {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+body.animaciones main > section.visible:not(.hero-home):not(.page-hero) {
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes acercar {
+    from { transform: scale(1.08); }
+    to { transform: scale(1); }
+}
+@media (max-width: 991px) {
+    .navbar .nav-link {
+        margin: 8px 0;
+    }
+    .hero-copy {
+        min-height: 0;
+        padding: 65px 6%;
+    }
+    .hero-visual {
+        min-height: 450px;
+    }
+}
+@media (max-width: 767px) {
+    .hero-copy h1 {
+        font-size: 3.1rem;
+    }
+    .hero-visual {
+        min-height: 360px;
+    }
+    .quick-strip .col-md-4 {
+        padding-left: 20px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+    body.animaciones main > section {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
