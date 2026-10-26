@@ -69,6 +69,30 @@ p {
 .menu-toggle:focus {
     box-shadow: 0 0 0 3px #c5ee6860;
 }
+.btn {
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 13px 22px;
+    transition: transform .25s, background .25s, box-shadow .25s;
+}
+.btn i {
+    margin-left: 14px;
+}
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-dark-green {
+    color: white;
+    background: #071e18;
+    border: 1px solid #071e18;
+}
+.btn-dark-green:hover {
+    color: white;
+    background: #245a49;
+}
+
 .hero-home {
     background: #071e18;
     color: white;
@@ -316,6 +340,61 @@ body.animaciones .visible .benefit-item:nth-child(3) {
     to { opacity: 1; transform: translateY(0); }
 }
 
+.step-card {
+    height: 100%;
+    padding: 24px;
+    border-top: 1px solid #d6e2d3;
+    border-radius: 14px;
+    transition: transform .3s ease, background .3s ease, box-shadow .3s ease;
+}
+.step-card:hover {
+    transform: translateY(-6px);
+    background: white;
+    box-shadow: 0 14px 30px #173c2a1b;
+}
+.step-number {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #c5ee68;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+.step-card h3 {
+    font-size: 1.06rem;
+}
+.step-card p {
+    margin: 0;
+    color: #65776e;
+    font-size: 0.9rem;
+}
+.cta-panel {
+    gap: 25px;
+    padding: 45px;
+    border-radius: 22px;
+    background: linear-gradient(110deg, #c5ee68, #e0f7aa, #c5ee68);
+    background-size: 200% 100%;
+    animation: brilloFondo 9s ease infinite;
+}
+.cta-panel h2 {
+    max-width: 700px;
+    font-size: clamp(1.9rem, 3vw, 2.7rem);
+}
+.cta-panel p:last-child {
+    margin: 0;
+}
+.cta-panel .btn {
+    flex: none;
+}
+
+@keyframes brilloFondo {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
 body.animaciones main > section:not(.hero-home):not(.page-hero) {
     opacity: 0;
     transform: translateY(28px);
@@ -346,6 +425,9 @@ body.animaciones main > section.visible:not(.hero-home):not(.page-hero) {
     }
 }
 @media (max-width: 767px) {
+    .cta-panel {
+        padding: 28px;
+    }
     .photo-frame img {
         height: 310px;
     }
