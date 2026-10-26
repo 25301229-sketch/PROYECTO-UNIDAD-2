@@ -395,6 +395,73 @@ body.animaciones .visible .benefit-item:nth-child(3) {
     50% { background-position: 100% 50%; }
 }
 
+.site-footer {
+    padding: 55px 0 20px;
+    color: #f3f7f1;
+    background: #071e18;
+}
+.site-footer p {
+    color: #a8bdb1;
+}
+.site-footer h2 {
+    margin: 8px 0 16px;
+    font-size: 0.85rem;
+    letter-spacing: 0;
+}
+.site-footer a:not(.footer-brand) {
+    display: block;
+    margin: 7px 0;
+    color: #a8bdb1;
+    font-size: 0.85rem;
+    transition: color .25s ease, transform .25s ease;
+}
+.site-footer a:hover {
+    color: #c5ee68;
+    transform: translateX(4px);
+}
+.social-links {
+    display: flex;
+    gap: 18px;
+    margin-top: 15px;
+}
+.site-footer .social-links a {
+    font-size: 1.4rem;
+}
+.footer-bottom {
+    gap: 10px;
+    margin-top: 45px;
+    padding-top: 18px;
+    border-top: 1px solid #315246;
+    color: #a8bdb1;
+    font-size: 0.72rem;
+}
+.floating-whatsapp {
+    display: grid;
+    place-items: center;
+    width: 53px;
+    height: 53px;
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 20;
+    border-radius: 50%;
+    color: #071e18;
+    background: #c5ee68;
+    box-shadow: 0 9px 25px #0004;
+    font-size: 1.5rem;
+    transition: transform .2s;
+    animation: pulso 3s ease-in-out infinite;
+}
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    color: #071e18;
+}
+
+@keyframes pulso {
+    0%, 100% { box-shadow: 0 9px 25px #0004; }
+    50% { box-shadow: 0 9px 28px #c5ee6899; }
+}
+
 body.animaciones main > section:not(.hero-home):not(.page-hero) {
     opacity: 0;
     transform: translateY(28px);
