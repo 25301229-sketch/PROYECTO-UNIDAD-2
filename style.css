@@ -236,6 +236,86 @@ p {
     background: #c5ee68;
 }
 
+.dark-section {
+    color: white;
+    background: #103e37;
+}
+.dark-section h2 {
+    margin-bottom: 24px;
+}
+.eyebrow.light-text {
+    color: #c5ee68;
+}
+.muted-light {
+    color: #bed1c8;
+}
+.benefit-item {
+    display: flex;
+    gap: 20px;
+    margin: 12px 0;
+    padding: 21px;
+    border-radius: 15px;
+    background: #205246;
+    transition: transform .3s, background .3s;
+}
+.benefit-item:hover {
+    transform: translateX(7px);
+    background: #296754;
+}
+.benefit-item > span {
+    color: #c5ee68;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+.benefit-item h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+.benefit-item p {
+    margin: 0;
+    color: #c1d2ca;
+    font-size: 0.88rem;
+}
+
+.soft-section {
+    background: #eaf0e5;
+}
+.photo-frame {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px #092d1b1e;
+    transition: box-shadow .5s ease, transform .5s ease;
+}
+.photo-frame:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 48px #092d1b30;
+}
+.photo-frame img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    transition: transform .5s;
+}
+.photo-frame:hover img {
+    transform: scale(1.08);
+}
+
+body.animaciones .visible .photo-frame,
+body.animaciones .visible .benefit-item {
+    animation: aparecerTarjeta .65s ease backwards;
+}
+body.animaciones .visible .benefit-item:nth-child(2) {
+    animation-delay: .12s;
+}
+body.animaciones .visible .benefit-item:nth-child(3) {
+    animation-delay: .24s;
+}
+@keyframes aparecerTarjeta {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 body.animaciones main > section:not(.hero-home):not(.page-hero) {
     opacity: 0;
     transform: translateY(28px);
@@ -266,6 +346,9 @@ body.animaciones main > section.visible:not(.hero-home):not(.page-hero) {
     }
 }
 @media (max-width: 767px) {
+    .photo-frame img {
+        height: 310px;
+    }
     .section-space {
         padding: 62px 0;
     }
