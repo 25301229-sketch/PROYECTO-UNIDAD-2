@@ -1,3 +1,13 @@
+const tarjetas = document.querySelectorAll('.feature-box');
+tarjetas.forEach((tarjeta) => {
+    tarjeta.addEventListener('mouseenter', () => {
+        tarjeta.classList.add('resaltada');
+    });
+    tarjeta.addEventListener('mouseleave', () => {
+        tarjeta.classList.remove('resaltada');
+    });
+});
+
 const secciones = document.querySelectorAll('main > section');
 
 if (secciones.length > 0) {

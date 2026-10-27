@@ -445,6 +445,33 @@ body.animaciones .visible .benefit-item:nth-child(3) {
     filter: brightness(1.08);
 }
 
+.feature-box {
+    height: 100%;
+    padding: 25px;
+    border: 1px solid #e1e8db;
+    border-radius: 18px;
+    background: white;
+    transition: transform .3s, box-shadow .3s;
+}
+.feature-box i {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #103e37;
+    font-size: 1.8rem;
+    transition: transform .3s ease;
+}
+.feature-box:hover i {
+    transform: rotate(-8deg) scale(1.1);
+}
+.feature-box h3 {
+    font-size: 1.2rem;
+}
+.feature-box p {
+    margin-bottom: 0;
+    color: #65776e;
+    font-size: 0.9rem;
+}
+
 .check-list {
     padding: 0;
     list-style: none;
