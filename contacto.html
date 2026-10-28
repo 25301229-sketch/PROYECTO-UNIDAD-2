@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta BRISECO por WhatsApp, Instagram o Facebook y consulta producto o servicio en Tula de Allende.">
+    <title>Contacto | BRISECO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg" aria-label="Menú principal">
+            <div class="container">
+                <a class="navbar-brand marca" href="index.html">BRISECO<span>•</span></a>
+                <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú"><i class="bi bi-list" aria-hidden="true"></i></button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="producto.html">Producto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicio.html">Servicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="btn btn-lima nav-boton" href="contacto.html#formulario">Consultar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container-fluid p-0">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-lg-6 page-hero-copy d-flex flex-column justify-content-center">
+                        <p class="eyebrow light-text">CONTACTO</p>
+                        <h1>Tu próxima decisión<br><span>empieza aquí.</span></h1>
+                        <p>Pregunta por el kit BRISECO o consulta una aplicación exterior a domicilio. Comparte los datos de tu auto y tu zona para recibir una respuesta útil para tu caso.</p>
+                        <div><a class="btn btn-lima mt-3" href="#formulario">Escribir consulta <i class="bi bi-arrow-down" aria-hidden="true"></i></a></div>
+                    </div>
+                    <div class="col-lg-6 page-hero-image"><img src="img/foto-auto.jpg" alt="Automóvil oscuro en un garaje"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-space soft-section">
+            <div class="container">
+                <p class="eyebrow">ELIGE CÓMO HABLAR</p>
+                <h2>Estoy a un mensaje.</h2>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-4"><a class="contact-method" href="https://wa.me/527733531142" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i><h3>WhatsApp</h3><p>773 353 1142. Comparte tu duda y recibe información del kit o del servicio.</p></a></div>
+                    <div class="col-md-4"><a class="contact-method" href="https://www.instagram.com/briseco.mx/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram" aria-hidden="true"></i><h3>Instagram</h3><p>@briseco.mx. Conoce el proyecto y envía un mensaje directo.</p></a></div>
+                    <div class="col-md-4"><a class="contact-method" href="https://www.facebook.com/share/19xxkoG2mr/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook" aria-hidden="true"></i><h3>Facebook</h3><p>BRISECO. Encuentra la página y ponte en contacto desde ahí.</p></a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-space">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <p class="eyebrow">COTIZA O PREGUNTA</p>
+                        <h2>Cuéntame lo que necesitas.</h2>
+                        <p class="subtle-text">El formulario organiza tu consulta para que podamos entender qué necesitas. Al terminar, podrás revisar el mensaje y abrirlo en WhatsApp.</p>
+                        <div class="numbered-list mt-4"><span>01</span><div><h3>Elige una opción</h3><p>Selecciona si te interesa el kit o la atención a domicilio. Si eliges servicio, podrás proponer una fecha.</p></div></div>
+                        <div class="numbered-list"><span>02</span><div><h3>Describe tu consulta</h3><p>Si buscas una cita, indica el tipo de auto y su estado. Si preguntas por el kit, cuéntanos qué deseas conocer.</p></div></div>
+                        <div class="numbered-list"><span>03</span><div><h3>Revisa tu mensaje</h3><p>Después de validar los campos, podrás leer el texto completo antes de decidir si lo envías por WhatsApp.</p></div></div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="form-card">
+                            <form id="formulario" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-sm-6"><label for="nombre">Tu nombre *</label><input class="form-control" type="text" id="nombre" name="nombre" minlength="2" maxlength="60" autocomplete="name" required></div>
+                                    <div class="col-sm-6"><label for="correo">Correo electrónico (opcional)</label><input class="form-control" type="email" id="correo" name="correo" autocomplete="email"></div>
+                                    <div class="col-sm-6"><label for="interes">Me interesa *</label><select class="form-select" id="interes" name="interes" required><option value="" selected>Elige una opción</option><option value="producto">El kit BRISECO de 500 ml</option><option value="servicio">El servicio a domicilio</option></select></div>
+                                    <div class="col-sm-6 d-none" id="autoBox"><label for="auto">Tipo de auto *</label><select class="form-select" id="auto" name="auto"><option value="" selected>Elige una opción</option><option value="Compacto">Compacto</option><option value="Sedán">Sedán</option><option value="SUV o camioneta">SUV o camioneta</option><option value="Otro vehículo">Otro vehículo</option></select></div>
+                                    <div class="col-sm-6"><label for="zona">Colonia o zona *</label><input class="form-control" type="text" id="zona" name="zona" maxlength="80" placeholder="Ej. Centro, Tula de Allende" required></div>
+                                    <div class="col-sm-6 d-none" id="fechaBox"><label for="fecha">Fecha que te gustaría consultar</label><input class="form-control" type="date" id="fecha" name="fecha"></div>
+                                    <div class="col-12"><label for="mensaje">Cuéntame más *</label><textarea class="form-control" id="mensaje" name="mensaje" minlength="10" maxlength="300" placeholder="Describe tu duda o el estado de tu auto" required></textarea><small class="form-help" id="contador">0 / 300 caracteres</small></div>
+                                    <div class="col-12"><fieldset><legend>¿Cómo prefieres recibir respuesta?</legend><div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="porWhatsapp" name="respuestaPreferida" value="WhatsApp" checked><label class="form-check-label" for="porWhatsapp">WhatsApp</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="porCorreo" name="respuestaPreferida" value="Correo"><label class="form-check-label" for="porCorreo">Correo</label></div></fieldset></div>
+                                    <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="confirmacion" required><label class="form-check-label" for="confirmacion">Entiendo que el mensaje se preparará aquí y yo decidiré si lo envío por WhatsApp. *</label></div></div>
+                                    <div class="col-12"><button class="btn btn-dark-green" type="submit">Preparar mi consulta <i class="bi bi-arrow-up-right" aria-hidden="true"></i></button></div>
+                                </div>
+                            </form>
+                            <p class="form-error d-none mt-3" id="respuesta" role="alert"></p>
+                            <div class="form-result d-none mt-4" id="consultaLista" aria-live="polite">
+                                <h3 class="h5">Tu mensaje está listo</h3>
+                                <p id="vistaMensaje" class="message-preview"></p>
+                                <p>Al abrir WhatsApp podrás revisar el mensaje otra vez y enviarlo cuando estés listo.</p>
+                                <a id="enlaceWhatsapp" class="btn btn-dark-green" href="https://wa.me/527733531142" target="_blank" rel="noopener noreferrer">Abrir WhatsApp <i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-space soft-section" id="ubicacion">
+            <div class="container">
+                <div class="row g-4 align-items-end">
+                    <div class="col-lg-7"><p class="eyebrow">ZONA DE ATENCIÓN</p><h2>Tula de Allende, Hidalgo.</h2><p class="subtle-text">El mapa muestra Tula de Allende 42800 como punto de referencia para las consultas. Comparte tu colonia y revisamos la posibilidad de atención a domicilio y el traslado.</p></div>
+                    <div class="col-lg-5 text-lg-end"><a class="btn btn-outline-briseco mb-3" href="https://www.google.com/maps/search/?api=1&amp;query=Tula+de+Allende+Hidalgo+42800" target="_blank" rel="noopener noreferrer">Abrir en Google Maps <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a></div>
+                </div>
+                <iframe class="map-frame" title="Mapa de Google Maps de Tula de Allende, Hidalgo 42800" src="https://www.google.com/maps?q=Tula+de+Allende%2C+Hidalgo+42800&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                <div class="row g-4 mt-3">
+                    <div class="col-md-6"><div class="info-card"><i class="bi bi-pin-map" aria-hidden="true"></i><h3>Consulta tu colonia</h3><p>Indica tu zona para revisar si está dentro del alcance de atención y cómo sería el traslado.</p></div></div>
+                    <div class="col-md-6"><div class="info-card"><i class="bi bi-chat-dots" aria-hidden="true"></i><h3>Confirma los detalles</h3><p>Antes de acordar una cita recibirás información del trabajo propuesto, horario disponible y costo total.</p></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4"><a class="footer-brand" href="index.html">BRISECO<span>•</span></a><p>Cuidado exterior práctico para tu auto, a tu manera.</p></div>
+                <div class="col-6 col-lg-2"><h2>Explora</h2><a href="producto.html">Producto</a><a href="servicio.html">Servicio</a><a href="nosotros.html">Nosotros</a></div>
+                <div class="col-6 col-lg-2"><h2>Ayuda</h2><a href="preguntas.html">Preguntas</a><a href="contacto.html">Contacto</a><a href="contacto.html#ubicacion">Zona de atención</a></div>
+                <div class="col-lg-4"><h2>Hablemos</h2><a href="https://wa.me/527733531142" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp" aria-hidden="true"></i> 773 353 1142</a><div class="social-links"><a href="https://www.instagram.com/briseco.mx/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de BRISECO"><i class="bi bi-instagram" aria-hidden="true"></i></a><a href="https://www.facebook.com/share/19xxkoG2mr/" target="_blank" rel="noopener noreferrer" aria-label="Facebook de BRISECO"><i class="bi bi-facebook" aria-hidden="true"></i></a></div></div>
+            </div>
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between"><span>© 2026 BRISECO. Proyecto de Miguel Aaron Anaya Avendaño.</span><span>Tula de Allende, Hidalgo · 42800</span></div>
+        </div>
+    </footer>
+    <a class="floating-whatsapp" href="https://wa.me/527733531142" target="_blank" rel="noopener noreferrer" aria-label="Consultar BRISECO por WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="funtion.js"></script>
+</body>
+</html>
